@@ -480,13 +480,13 @@ var main = (function($) { var _ = {
 	 */
 	init: function() {
 
-		window.screen.orientation.onchange = function() {
-			  if (this.type.startsWith('landscape')) {
-				document.querySelector('body').webkitRequestFullscreen();
-			  } else {
-				document.webkitExitFullscreen();
-			  }
-			};
+//		window.screen.orientation.onchange = function() {
+//			  if (this.type.startsWith('landscape')) {
+//				document.querySelector('body').webkitRequestFullscreen();
+//			  } else {
+//				document.webkitExitFullscreen();
+//			  }
+//			};
 
 		// IE<10: Zero out transition delays.
 			if (skel.vars.IEVersion < 10) {
