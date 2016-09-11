@@ -141,6 +141,7 @@ var main = (function($) { var _ = {
 		// Window, body.
 			_.$window = $(window);
 			_.$body = $('body');
+			window.scrollTo(0,1);
 
 		// Thumbnails.
 			_.$thumbnails = $('#thumbnails');
