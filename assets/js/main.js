@@ -141,7 +141,6 @@ var main = (function($) { var _ = {
 		// Window, body.
 			_.$window = $(window);
 			_.$body = $('body');
-			window.scrollTo(0,1);
 
 		// Thumbnails.
 			_.$thumbnails = $('#thumbnails');
@@ -480,6 +479,8 @@ var main = (function($) { var _ = {
 	 * Initialize stuff.
 	 */
 	init: function() {
+
+		/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {   window.scrollTo(0, 1); }, 1000);?
 
 		// IE<10: Zero out transition delays.
 			if (skel.vars.IEVersion < 10) {
