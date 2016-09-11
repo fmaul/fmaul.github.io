@@ -480,7 +480,13 @@ var main = (function($) { var _ = {
 	 */
 	init: function() {
 
-		/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {   window.scrollTo(0, 1); }, 1000);
+		window.screen.orientation.onchange = function() {
+			  if (this.type.startsWith('landscape')) {
+				document.querySelector('body').webkitRequestFullscreen();
+			  } else {
+				document.webkitExitFullscreen();
+			  }
+			};
 
 		// IE<10: Zero out transition delays.
 			if (skel.vars.IEVersion < 10) {
