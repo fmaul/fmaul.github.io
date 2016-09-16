@@ -1223,7 +1223,8 @@
 		/* Very wide screen, e.g. mobile with browser navbar */
 		@media (min-aspect-ratio: 2/1) {
 			#viewer .slide .image {
-	 			background-size: contain;
+	 			background-size: contain; /* show the whole image */
+				background-position: center !important; /* when whole image is displayed, don't position it */
 			}
 		}
 
@@ -1242,7 +1243,8 @@
 			}
 
 			#viewer .slide .image {
-	 			background-size: contain;
+	 			background-size: contain; /* show the whole image */
+				background-position: center !important; /* when whole image is displayed, don't position it */
 			}
 
 				#viewer .inner .toggle {
