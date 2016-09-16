@@ -1220,6 +1220,13 @@
 
 		}
 
+		/* Very wide screen, e.g. mobile with browser navbar */
+		@media (min-aspect-ratio: 2/1) {
+			#viewer .slide .image {
+	 			background-size: contain;
+			}
+		}
+
 		@media screen and (max-width: 480px) {
 
 			#viewer {
@@ -1232,6 +1239,10 @@
 				-ms-transition-delay: 0s;
 				transition-delay: 0s;
 				opacity: 0;
+			}
+
+			#viewer .slide .image {
+	 			background-size: contain;
 			}
 
 				#viewer .inner .toggle {
