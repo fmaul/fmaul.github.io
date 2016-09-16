@@ -773,6 +773,6 @@ var main = (function($) { var _ = {
 		else
 			_.hide();
 
-	},
+	}
 
 }; return _; })(jQuery); main.init();
