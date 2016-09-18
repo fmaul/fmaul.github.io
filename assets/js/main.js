@@ -348,12 +348,10 @@ var main = (function($) { var _ = {
 
 		// Nav.
 			_.$navNext.on('click', function() {
-				document.getElementById("main").webkitRequestFullscreen();
 				_.next();
 			});
 
 			_.$navPrevious.on('click', function() {
-				document.getElementById("main").webkitRequestFullscreen();
 				_.previous();
 			});
 
