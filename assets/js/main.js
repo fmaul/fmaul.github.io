@@ -481,8 +481,12 @@ var main = (function($) { var _ = {
 	init: function() {
 
 		window.screen.orientation.onchange = function() {
+			console.log("onchange");
+			console.log(this);
 			if (this.type.startsWith('landscape')) {
+
 				document.querySelector('body').webkitRequestFullscreen();
+
 		  } else {
 				document.webkitExitFullscreen();
 		  }
