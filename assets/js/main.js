@@ -392,7 +392,13 @@ var main = (function($) { var _ = {
 		// Bind thumbnail click event.
 			_.$thumbnails
 				.on('click', '.thumbnail', function(event) {
-
+/*
+					if (window.screen.orientation.type.startsWith('landscape')) {
+							document.querySelector('body').webkitRequestFullscreen();
+						} else {
+							document.webkitExitFullscreen();
+						}
+*/
 					var $this = $(this);
 
 					// Stop other events.
@@ -480,8 +486,8 @@ var main = (function($) { var _ = {
 	 */
 	init: function() {
 
-		window.screen.orientation.onchange = function() {
 /*
+		window.screen.orientation.onchange = function() {
 			if (this.type.startsWith('landscape')) {
 
 				document.querySelector('body').webkitRequestFullscreen();
