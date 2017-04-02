@@ -481,9 +481,9 @@ var main = (function($) { var _ = {
 	init: function() {
 
 		window.screen.orientation.onchange = function() {
-debugger;
-			console.log("onchange");
-			console.log(this);
+
+			document.write("onchange");
+			document.write(this);
 			if (this.type.startsWith('landscape')) {
 
 				document.querySelector('body').webkitRequestFullscreen();
