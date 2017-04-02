@@ -481,9 +481,7 @@ var main = (function($) { var _ = {
 	init: function() {
 
 		window.screen.orientation.onchange = function() {
-
-			document.write("onchange");
-			document.write(this);
+/*
 			if (this.type.startsWith('landscape')) {
 
 				document.querySelector('body').webkitRequestFullscreen();
@@ -492,7 +490,7 @@ var main = (function($) { var _ = {
 				document.webkitExitFullscreen();
 		  }
 		};
-
+*/
 		// IE<10: Zero out transition delays.
 			if (skel.vars.IEVersion < 10) {
 
